@@ -1,0 +1,10 @@
+# docker-compose.ymlのファイルフォーマットのversion
+version: "3"
+services:
+  # コンテナの名前定義
+  echo:
+    # Dockerイメージ
+    image: example/echo:latest
+    # ポートフォワーディング
+    ports:
+      - 9000:8080
